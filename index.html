@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>무당선생 클래스</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- header.header>.inner>h1.logo+button:button.btn-menu>i.hidden{메뉴} -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="logo">
+          <a href="#"><img src="./img/logo.svg" alt="M" /></a>
+        </h1>
+        <button type="button" class="btn-menu">
+          <i class="hidden">메뉴</i>
+        </button>
+      </div>
+    </header>
+    <hr />
+    <!-- //e: header -->
+
+    <main class="main">
+      <section class="hero">
+        <!-- .visual-title>h2+p+a.cta{Get in Touch} -->
+        <div class="visual-title">
+          <h2>MOODANG CLASS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            eu velit nulla.
+          </p>
+          <a href="#" class="cta">Get in Touch</a>
+        </div>
+      </section>
+      <!-- //e: hero -->
+
+      <section class="team">
+        <div class="inner">
+          <!-- h3.sec-title+.team-slider -->
+          <h3 class="sec-title">awesome team</h3>
+
+          <div class="team-slider-wrap">
+            <!-- Slider main container -->
+            <div class="swiper team-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <!-- (fig>img)+dl>dt+dd -->
+                  <figure>
+                    <img
+                      src="https://thumb.mt.co.kr/06/2025/04/2025043013233526847_1.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <dl>
+                    <dt>We Are Creative</dt>
+                    <dd>
+                      Sit fugiat eiusmod exercitation elit esse ea Lorem elit
+                      nisi
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="https://cdn.mhnse.com/news/photo/202208/129824_120772_209.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <dl>
+                    <dt>We Have Skills</dt>
+                    <dd>
+                      Lorem ipsum dolor sit amet, dicta albucius ne. Nostro
+                      gubergren in ius, ea nam vocent electram. An verear
+                      efficiantur usu
+                    </dd>
+                  </dl>
+                </div>
+                <div class="swiper-slide">
+                  <figure>
+                    <img
+                      src="https://biz.chosun.com/resizer/v2/PZ4N4KZKDJMW5HBW4Q2VHFGASU.JPG?auth=d5973b1bd6f5e86d600fec3b1cf7bf5932e98afc2fcfb0d589130695900b21f7&width=616"
+                      alt=""
+                    />
+                  </figure>
+                  <dl>
+                    <dt>We Love To Help</dt>
+                    <dd>
+                      Sit fugiat eiusmod exercitation elit esse Nostro gubergren
+                      in ius, ea nam vocent electram. An verear efficiantur usu
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: team -->
+
+      <section class="story">
+        <div class="inner">
+          <!-- h3.sec-title+p -->
+          <h3 class="sec-title">Success Stories</h3>
+          <p>We do awesome work,check some of success stories so far</p>
+
+          <!-- .story-best+ul.story-list>li*6>a>fig>img -->
+          <div class="story-best">
+            <!-- fig+.story-con -->
+            <figure><img src="./img/pic7.jpeg" alt="" /></figure>
+            <div class="story-con">
+              <div>
+                <!-- h4+p+a.view-project{View Project} -->
+                <h4>Lorem Ipsum Project</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+                <a href="#" class="view-project">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <ul class="story-list">
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic1.png" alt="" /></figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic2.jpg" alt="" /></figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic3.jpg" alt="" /></figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic4.jpg" alt="" /></figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic5.jpg" alt="" /></figure>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <figure><img src="./img/pic6.png" alt="" /></figure>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- //e: story -->
+
+      <section class="touch">
+        <div class="inner">
+          <!-- h3.sec-title+p -->
+          <h3 class="sec-title">get in touch</h3>
+          <p>We are communicative and social</p>
+
+          <!-- .map+.contact -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2053747463847!2d126.8764106764283!3d37.503074027763745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fc70bce5993%3A0xdd5b5b33e55b538e!2z7ZWY7J2066-465SU7Ja07Lu07ZOo7YSw7ZWZ7JuQIOq1rOuhnOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1757037678589!5m2!1sko!2skr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contact">
+            <!-- .contact-con+.contact-form -->
+            <div class="contact-con">
+              <!-- dl>(dt+dd)*3 -->
+              <dl>
+                <dt>Our Address</dt>
+                <dd>
+                  7392 W Belt Line Rd undefined Round Rock, Alabama 65563 United
+                  States
+                </dd>
+
+                <dt>E-mail</dt>
+                <dd>monica.roberts@example.com</dd>
+
+                <dt>Phone</dt>
+                <dd>+00 123-456-78900</dd>
+              </dl>
+            </div>
+
+            <div class="contact-form">
+              <form action="#">
+                <!-- .f-wrap>.f-row*3 -->
+                <div class="f-wrap">
+                  <div class="f-row">
+                    <input type="text" placeholder="Your Name" />
+                    <input type="text" placeholder="Your E-mail" />
+                  </div>
+
+                  <div class="f-row">
+                    <input type="text" placeholder="Subject" />
+                  </div>
+
+                  <div class="f-row">
+                    <textarea
+                      name="#"
+                      id="#"
+                      placeholder="Type Massage Here..."
+                    ></textarea>
+                  </div>
+                  <!-- button:submit.btn-send{Send} -->
+                  <button type="submit" class="btn-send">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //e: touch -->
+    </main>
+    <hr />
+    <!-- //e: main -->
+
+    <footer class="footer">
+      <div class="inner">
+        <!-- .foot-logo+p+ul.sns-list>li*3>a>img -->
+        <div class="foot-logo"><img src="./img/logo.svg" alt="M" /></div>
+        <p>Copyright © 2020 moodang-teacher.com, All Rights Reserved.</p>
+        <ul class="sns-list">
+          <li>
+            <a href="#"><img src="./img/ico-facebook.svg" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/ico-x.svg" alt="X" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/ico-insta.svg" alt="instagram" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <hr />
+    <!-- //e: footer -->
+  </body>
+</html>
