@@ -13,17 +13,20 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
     <!-- header.header>.inner>h1.logo+button:button.btn-menu>i.hidden{메뉴} -->
     <header class="header">
       <div class="inner">
-        <h1 class="logo">
-          <a href="#"><img src="./img/logo.svg" alt="M" /></a>
-        </h1>
-        <button type="button" class="btn-menu">
-          <i class="hidden">메뉴</i>
-        </button>
+        <nav>
+          <h1 class="logo">
+            <a href="#"><img src="./img/logo.svg" alt="M" /></a>
+          </h1>
+          <button type="button" class="btn-menu">
+            <i class="hidden">메뉴</i>
+          </button>
+        </nav>
       </div>
     </header>
     <hr />
@@ -102,16 +105,9 @@
                   </dl>
                 </div>
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>

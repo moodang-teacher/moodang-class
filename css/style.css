@@ -5,3 +5,137 @@
   margin: 0 auto;
   background: rgba(255, 255, 0, 0.1);
 }
+
+.header {
+  /* posa+t4r+l50p+trftx */
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: #000; */
+  z-index: 10;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-menu {
+  width: 4.7rem;
+  height: 4.7rem;
+  background: url(../img/ico-menu.svg) no-repeat 50% 50%;
+}
+
+.hero {
+  height: 50.7rem;
+  background: url(../img/visual.png) no-repeat 50% 50% / cover;
+  position: relative;
+}
+
+.visual-title {
+  /* posa+t50p+l50p+trft */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: pink; */
+  text-align: center;
+  color: #fff;
+  width: 37.4rem;
+
+  display: flex;
+  flex-direction: column; /* fxdc */
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.visual-title h2 {
+  /* fw900+fz3.6r */
+  font-weight: 900;
+  font-size: 3.6rem;
+}
+.visual-title p {
+  font-size: 1.8rem;
+  width: 24rem;
+}
+.visual-title .cta {
+  display: block;
+  background: var(--main-color);
+  color: #fff;
+  padding: 1.4rem;
+  width: 24rem;
+  font-weight: 900;
+  border-radius: 3px; /* bdrs3 */
+}
+
+.main > section:not(:first-child) {
+  padding: 9rem 0 4.5rem;
+}
+
+.main > section:last-child {
+  padding-bottom: 9rem;
+}
+
+.sec-title {
+  text-align: center;
+  /* fw900+fz3r+c */
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--main-color);
+  text-transform: uppercase; /* ttu */
+  line-height: 1;
+}
+
+.sec-title + p {
+  /* fz2r+tac+mt1.8r */
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.team-slider-wrap {
+  margin-top: 3rem;
+  position: relative; /* 절대배치되는 swiper-pagination의 기준 */
+  padding-bottom: 3rem;
+}
+
+.team-slider-wrap .swiper-slide {
+  border: var(--line);
+  border-radius: 9px; /* bdrs9 */
+  padding: 3.8rem 3.5rem;
+  text-align: center;
+  min-height: 38rem;
+}
+
+.team-slider-wrap .swiper-slide figure {
+  width: 16rem;
+  aspect-ratio: 1/1; /* asr */
+  border-radius: 50%; /* bdrs50p */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.team-slider-wrap .swiper-slide dl {
+  margin-top: 2.3rem;
+}
+
+.team-slider-wrap .swiper-slide dl dt {
+  /* fw700+fz2.2r+lh1+c#444 */
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #444;
+}
+.team-slider-wrap .swiper-slide dl dd {
+  margin-top: 2.3rem;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--main-color);
+}
