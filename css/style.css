@@ -4,7 +4,7 @@
   width: 37.4rem;
   width: 90.3382%;
   margin: 0 auto;
-  background: rgba(255, 255, 0, 0.1);
+  /* background: rgba(255, 255, 0, 0.1); */
 }
 
 .header {
@@ -22,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.gnb {
+  display: none;
 }
 
 .btn-menu {
@@ -58,10 +62,17 @@
   /* fw900+fz3.6r */
   font-weight: 900;
   font-size: 3.6rem;
+  /* clamp(최소값, 추천값, 최대값) */
+  font-size: clamp(3.6rem, 7vw, 6rem);
 }
 .visual-title p {
   font-size: 1.8rem;
+  font-size: clamp(1.8rem, 5.5vw, 3rem);
   width: 24rem;
+  width: 64.1711%;
+  /* max(A, B) 둘 중에 큰 값 선택 */
+  /* width: max(40%, 24rem); */
+  /* width: clamp(24rem, 40vw, 64.1711%); */
 }
 .visual-title .cta {
   display: block;
@@ -101,7 +112,7 @@
 .team-slider-wrap {
   margin-top: 3rem;
   position: relative; /* 절대배치되는 swiper-pagination의 기준 */
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .team-slider-wrap .swiper-slide {
@@ -130,9 +141,25 @@
   font-size: 2.2rem;
   line-height: 1;
   color: #444;
+
+  /* 한 줄 말줄임표시 */
+  display: block;
+  width: 100%;
+  white-space: nowrap; /* whs */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* border: 1px solid #f00; */
 }
 .team-slider-wrap .swiper-slide dl dd {
   margin-top: 2.3rem;
+
+  /* 여러줄 말줄임표시 */
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 줄 수 */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .swiper-pagination {
@@ -157,9 +184,6 @@
   padding: 5rem 4.3rem;
   border: var(--line);
   background: #fff;
-}
-
-.story-con > div {
 }
 
 .story-con > div h4 {
@@ -309,9 +333,9 @@
     width: 95.9961%;
   }
 
-  .team-slider-wrap .swiper-slide {
+  /* .team-slider-wrap .swiper-slide {
     min-height: 42rem;
-  }
+  } */
 
   .story-best {
     flex-direction: row; /* fxdr */
@@ -355,5 +379,45 @@
 
   .footer p {
     margin-right: auto; /* mra */
+  }
+}
+
+@media (min-width: 1170px) {
+  .inner {
+    width: 117rem;
+  }
+
+  .gnb {
+    display: flex;
+  }
+
+  .gnb > li > a {
+    display: block;
+    padding: 1rem 2.5rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .story-list li {
+    flex: 1 1 30%;
+  }
+
+  .contact {
+    flex-direction: row-reverse; /* fxdrr */
+    gap: 3rem;
+    margin-top: 4.5rem;
+  }
+
+  .contact-con {
+    width: 47rem;
+    padding: 2rem 6rem;
+  }
+
+  .contact-form {
+    width: 67rem;
   }
 }
