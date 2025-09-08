@@ -2,6 +2,7 @@
 
 .inner {
   width: 37.4rem;
+  width: 90.3382%;
   margin: 0 auto;
   background: rgba(255, 255, 0, 0.1);
 }
@@ -14,6 +15,7 @@
   transform: translateX(-50%);
   /* background: #000; */
   z-index: 10;
+  width: 100%;
 }
 
 .header nav {
@@ -44,6 +46,7 @@
   text-align: center;
   color: #fff;
   width: 37.4rem;
+  width: 90.3382%;
 
   display: flex;
   flex-direction: column; /* fxdc */
@@ -71,12 +74,12 @@
 }
 
 .main > section:not(:first-child) {
-  padding: 9rem 0 4.5rem;
+  padding: 9rem 0;
 }
 
-.main > section:last-child {
+/* .main > section:last-child {
   padding-bottom: 9rem;
-}
+} */
 
 .sec-title {
   text-align: center;
@@ -138,4 +141,219 @@
 
 .swiper-pagination-bullet-active {
   background: var(--main-color);
+}
+
+.story {
+  background: var(--bg-light2);
+}
+
+.story-best {
+  display: flex;
+  flex-direction: column; /* fxdc */
+  margin-top: 3.6rem;
+}
+
+.story-con {
+  padding: 5rem 4.3rem;
+  border: var(--line);
+  background: #fff;
+}
+
+.story-con > div {
+}
+
+.story-con > div h4 {
+  /* fw900+fz2.4r+lh1+c */
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #222;
+}
+.story-con > div p {
+  margin-top: 2rem;
+}
+.story-con > div .view-project {
+  margin-top: 2rem;
+  background: var(--main-color);
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.2;
+  height: 48px;
+  /* line-height: 48px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.story-list li {
+  /* fx1-1-50p */
+  flex: 1 1 45%;
+  aspect-ratio: 1/0.8235; /* asr: 종횡비-> 가로에 대한 세로의 비율 */
+}
+
+.map {
+  aspect-ratio: 1/1.1658;
+  margin-top: 4.2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-con {
+  /* border: 1px solid #000; */
+  /* p6.9r-3.7r-4.3r */
+  padding: 6.9rem 3.7rem 4.3rem;
+  padding: 16.6667vw 8.9372vw 10.3865vw;
+}
+
+.contact-con dl dt {
+  /* fw700+fz2.2r+lh1+c#444 */
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #444;
+}
+
+.contact-con dl dt:not(:first-child) {
+  margin-top: 5.6rem;
+}
+
+.contact-con dl dd {
+  /* mt1.3r+lh1.375 */
+  margin-top: 1.3rem;
+  line-height: 1.375;
+}
+
+.f-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.f-wrap .f-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.f-wrap .f-row input {
+  /* flex: 1 1 5rem; */
+  height: 5rem;
+  background: var(--bg-light);
+  border-radius: 6px;
+  padding: 1.4rem 2.4rem;
+}
+
+.f-wrap .f-row textarea {
+  background: var(--bg-light);
+  border-radius: 6px;
+  height: 20rem;
+  padding: 1.4rem 2.4rem;
+}
+
+.f-wrap .f-row ::placeholder {
+  /* fw700+c#ADB3BA */
+  font-weight: 700;
+  color: #adb3ba;
+  line-height: 1.375;
+}
+
+.f-wrap .btn-send {
+  background: var(--main-color);
+  height: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.footer {
+  background: var(--bg-dark);
+  padding: 5.2rem 0 6rem;
+}
+
+.footer .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.1rem;
+  align-items: center;
+}
+
+.footer p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.sns-list {
+  display: flex;
+  gap: 0.9rem;
+}
+
+/* 태블릿 디자인 */
+@media (min-width: 1024px) {
+  .inner {
+    width: 98.3rem;
+    width: 95.9961%;
+  }
+
+  .team-slider-wrap .swiper-slide {
+    min-height: 42rem;
+  }
+
+  .story-best {
+    flex-direction: row; /* fxdr */
+  }
+
+  .story-best > * {
+    flex: 1 1 50%;
+  }
+
+  .story-list {
+    gap: 3rem;
+  }
+
+  .map {
+    aspect-ratio: 1/0.61;
+  }
+
+  .contact-con {
+    padding: 9.7656vw 16.5039vw;
+  }
+
+  .contact-form {
+    width: 64.6rem;
+    width: 65.7172%;
+    margin: 0 auto;
+  }
+
+  .f-wrap .f-row {
+    flex-direction: row; /* fxdr */
+  }
+
+  .f-wrap .f-row input,
+  .f-wrap .f-row textarea {
+    flex: 1 1 45%;
+  }
+
+  .footer .inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer p {
+    margin-right: auto; /* mra */
+  }
 }
