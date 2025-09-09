@@ -213,15 +213,14 @@
 }
 
 .story-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 2.5rem;
+  column-count: auto;
+  column-width: 300px; /* 최소 크기 */
+  column-gap: 2rem;
 }
 
 .story-list li {
-  /* fx1-1-50p */
-  flex: 1 1 45%;
-  aspect-ratio: 1/0.8235; /* asr: 종횡비-> 가로에 대한 세로의 비율 */
+  margin-bottom: 2rem; /* mb2r */
 }
 
 .map {
@@ -345,10 +344,6 @@
     flex: 1 1 50%;
   }
 
-  .story-list {
-    gap: 3rem;
-  }
-
   .map {
     aspect-ratio: 1/0.61;
   }
@@ -400,10 +395,6 @@
 
   .btn-menu {
     display: none;
-  }
-
-  .story-list li {
-    flex: 1 1 30%;
   }
 
   .contact {
